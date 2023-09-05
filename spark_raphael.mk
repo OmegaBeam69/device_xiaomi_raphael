@@ -30,11 +30,6 @@ TARGET_ENABLE_BLUR := true
 #Udfps Stuff
 EXTRA_UDFPS_ANIMATIONS := true
 
-
-# Superior Prebuilts
-USE_MOTO_CALCULATOR := true
-
-
 # Quick Tap Feature
 TARGET_SUPPORTS_QUICK_TAP := true
 
