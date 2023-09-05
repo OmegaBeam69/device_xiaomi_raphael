@@ -32,8 +32,8 @@ EXTRA_UDFPS_ANIMATIONS := true
 
 
 # Superior Prebuilts
-USE_DUCKDUCKGO := true
 USE_MOTO_CALCULATOR := true
+
 
 # Quick Tap Feature
 TARGET_SUPPORTS_QUICK_TAP := true
