@@ -30,8 +30,8 @@ TARGET_ENABLE_BLUR := true
 #Udfps Stuff
 EXTRA_UDFPS_ANIMATIONS := true
 
+
 # Superior Prebuilts
-USE_QUICKPIC := true
 USE_DUCKDUCKGO := true
 USE_MOTO_CALCULATOR := true
 
