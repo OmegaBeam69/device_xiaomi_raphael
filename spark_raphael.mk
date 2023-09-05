@@ -15,14 +15,8 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common SuperiorOS stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
-
-# Maintainer Flag (one word only/no spacing)
-MAINTAINER := ΛＲＣＨＩＴΣＣＴツ(@SageOfD6Path)
-
-# GAPPS build flag, if not defined build type is vanilla
-#SUPERIOR_GAPPS = full
+# Inherit some common SparkOS stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -33,11 +27,8 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 # Disable/Enable Blur Support, default is false
 TARGET_ENABLE_BLUR := true
 
-# Officialify 
-SUPERIOR_OFFICIAL := true
-
 #Udfps Stuff
-SUPERIOR_UDFPS_ANIMATIONS := true
+EXTRA_UDFPS_ANIMATIONS := true
 
 # Superior Prebuilts
 USE_QUICKPIC := true
@@ -47,8 +38,18 @@ USE_MOTO_CALCULATOR := true
 # Quick Tap Feature
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# With Gapps
+WITH_GAPPS := false
+
+# Officially 
+SPARK_BUILD_TYPE := UNOFFICIAL
+
+# Maintainer
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.spark.maintainer= Wasik | Fahim
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := superior_raphael
+PRODUCT_NAME := spark_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
