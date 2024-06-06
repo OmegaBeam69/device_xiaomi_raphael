@@ -379,6 +379,12 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm \
     vendor.lineage.livedisplay@2.1-service.raphael
 
+# Kernel
+LOCAL_KERNEL := device/xiaomi/raphael-kernel/Image
+PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel
+
+
 # LMK tuning
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.filecache_min_kb=153600 \
