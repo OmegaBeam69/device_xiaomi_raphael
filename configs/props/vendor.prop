@@ -196,7 +196,7 @@ ro.vendor.use_data_netmgrd=true
 vendor.power.pasr.enabled=true
 
 # Perf
-ro.vendor.extension_library=libqti-perfd-client.so
+#ro.vendor.extension_library=libqti-perfd-client.so
 
 # Fingerprint
 persist.vendor.fingerprint.type=udfps_optical
