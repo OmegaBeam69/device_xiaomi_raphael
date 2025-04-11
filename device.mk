@@ -460,9 +460,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power.stats@1.0-service.raphael
 
-# Perf
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
 
 # Power
 PRODUCT_PACKAGES += \
