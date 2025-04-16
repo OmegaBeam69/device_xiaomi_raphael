@@ -351,9 +351,6 @@ LOCAL_KERNEL := device/xiaomi/raphael-kernel/Image
 PRODUCT_COPY_FILES += \
 	$(LOCAL_KERNEL):kernel
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light-service.xiaomi
 
 # Logging
 SPAMMY_LOG_TAGS := \
