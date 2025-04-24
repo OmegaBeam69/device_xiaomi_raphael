@@ -64,11 +64,13 @@ TARGET_USES_FOD_ZPOS := true
 BOARD_HAVE_QCOM_FM := true
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/hidl/manifest.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/hidl/compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/hidl/framework_compatibility_matrix.xml
-ODM_MANIFEST_SKUS += nfc
-ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/hidl/manifest_nfc.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+	$(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml \
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
+    hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
+    vendor/yaap/config/device_framework_matrix.xml
+DEVICE_MATRIX_FILE += hardware/qcom-caf/common/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
@@ -99,7 +101,6 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(BOARD_PREBUILT_DTBIMAGE_DIR)/sm8150-v2.dtb
 
 
 # Media
-TARGET_DISABLED_UBWC := true
 TARGET_USES_ION := true
 
 # Partitions
