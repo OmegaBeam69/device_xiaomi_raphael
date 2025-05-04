@@ -213,13 +213,15 @@ on property:sys.boot_completed=1
     write /sys/class/leds/vibrator/duration 100
     write /sys/class/leds/vibrator/boot_vibrator 1
 
-
+<<<<<<< HEAD
+    # Kprofiles tune 
+    write /sys/module/kprofiles/parameters/auto_kprofiles Y
+    write
 
     # Setup final cpu.uclamp.min
     write /dev/cpuctl/top-app/cpu.uclamp.min 0.00
     write /dev/cpuctl/foreground/cpu.uclamp.min 0.00
     write /dev/cpuctl/system/cpu.uclamp.min 0.00
-
     # Uclamp tunings
 
     # Set uclamp.max for some groups, which could indicate cpu importance used in scheduling
