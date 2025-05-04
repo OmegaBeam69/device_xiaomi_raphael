@@ -647,7 +647,6 @@ PRODUCT_COPY_FILES += \
 
 # XiaomiParts
 PRODUCT_PACKAGES += \
-    DSPVolumeSynchronizer \
     XiaomiDolby \
     XiaomiParts
 
