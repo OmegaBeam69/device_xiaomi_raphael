@@ -89,6 +89,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
+    audio.primary.default \
     audio.usb.default \
     audio.r_submix.default
 
